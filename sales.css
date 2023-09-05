@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #e9e9e9;
+}
+
+.header-content {
+  height: 80px;
+  background: #1e2859;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 18px 10px #aaaaaa;
+}
+
+.header-content .navigation-list {
+  display: flex;
+}
+
+.navigation-list li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.navigation-list li a {
+  text-decoration: none;
+  color: #e9e9e9;
+}
+
+main h1 {
+  color: #1e2859;
+  font-size: 88px;
+  font-weight: 900;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.cards-container {
+  padding: 40px;
+}
+
+.card {
+  width: 300px;
+  /* background-color: #e9e9e9; */
+  /* border: 4px solid #1e2859; */
+  box-shadow: 0 0 10px 4px #aaaaaa;
+}
+
+.card .card-image-container {
+  /* width: 300px; */
+  overflow: hidden;
+  border-bottom: 4px solid #1e2859;
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card h2 {
+  /* text-align: center; */
+  /* color: #1e2859; */
+  color: #b48b3f;
+  font-size: 24px;
+  padding-left: 20px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.card .card-description {
+  padding: 20px 20px 8px 20px;
+  font-weight: 300;
+}
+
+.card .card-data {
+  display: flex;
+  /* background-color: #1e2859; */
+  padding: 10px 0 10px 20px;
+}
+
+.card-data div {
+  width: 50%;
+}
+
+.card-data div h3 {
+  /* text-align: center; */
+  
+  /* color: #ffffff; */
+  /* color: #c6c6c6; */
+  color: #707070;
+  font-weight: 300;
+}
+
+.card-data div p {
+  /* color: #ffffff; */
+  /* text-align: center; */
+  padding: 8px 0;
+  color: #b48b3f;
+  font-weight: 700;
+}
+
+.card-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-button-container button {
+  background-color: #1e2859;
+  padding: 10px;
+  width: 90%;
+  color: #ffffff;
+  border: none;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #1e2859;
+}
+
+.footer-links {
+  padding: 20px 0;
+}
+
+.footer-links h2 {
+  color: #e9e9e9;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-links .links-list {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links-list li{
+  list-style: none;
+}
+
+.links-list li a {
+  text-decoration: none;
+  color: #e9e9e9;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.links-list li img {
+  width: 30px;
+  margin-right: 10px;
+}
