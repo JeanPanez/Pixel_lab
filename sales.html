@@ -35,14 +35,14 @@
   </header>
   <main>
     <h1>Explora Nuestros Productos</h1>
-    <section class="cards-container">
-      <article class="card">
-        <figure class="card-image-container">
+    <section class="products-container">
+      <article class="product">
+        <figure class="product-image-container">
           <img src="./assets/images/libro.png" alt="producto">
         </figure>
-        <h2>Producto</h2>
-        <p class="card-description">Un libro de MDF con detalles de corte láser: arte y literatura se fusionan en una obra de precisión y belleza.</p>
-        <div class="card-data">
+        <h2>Libro</h2>
+        <p class="product-description">Un libro de MDF con detalles de corte láser: arte y literatura se fusionan en una obra de precisión y belleza.</p>
+        <div class="product-data">
           <div>
             <h3>Categoría</h3>
             <p>Corte Laser</p>
@@ -52,24 +52,33 @@
             <p>S/90.00</p>
           </div>
         </div>
-        <div class="card-button-container">
-          <button id="toggleButton">Pedir producto</button>
+        <div class="product-button-container">
+          <button id="toggleButton">Solicite el Producto</button>
         </div>
       </article>
     </section>
     <section class="forms-container" id="miAside">
       <aside>
         <form action="">
-          <h2>Formulario</h2>
-          <label for="name">Nombre</label><br>
-          <input type="text" id="name"><br><br>
+          <h2>Solicite su Producto</h2>
+          <label for="name">Nombres y Apellidos</label><br>
+          <input type="text" id="name"><br>
 
-          <label for="email">Correo</label><br>
-          <input type="email" id="email"><br><br>
+          <label for="phone">Teléfono</label><br>
+          <input type="number" id="phone"><br>
+
+          <label for="producto">Nombre del Producto</label><br>
+          <input type="text" id="producto"><br>
+
+          <label for="dimension ">Dimensiones</label><br>
+          <input type="text" id="dimension "><br>
+
+          <label for="character-design">Personaje o Diseño</label><br>
+          <input type="text" id="character-design"><br>
 
           <label for="message">Mensaje</label><br>
-          <textarea name="" id="message" cols="30" rows="10"></textarea><br><br>
-          <button>Pedir</button>
+          <textarea name="" id="message" cols="30" rows="10"></textarea><br>
+          <button>Solicitar</button>
         </form>
       </aside>
     </section>
