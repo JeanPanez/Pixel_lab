@@ -1,10 +1,12 @@
-var toggleButton = document.getElementById('toggleButton');
-var miAside = document.getElementById('miAside');
+var productButton = document.getElementById('productButton');
+var aside = document.getElementById('aside');
 
-toggleButton.addEventListener('click', function () {
-  if (miAside.style.display === 'none' || miAside.style.display === '') {
-    miAside.style.display = 'block';
-  } else {
-    miAside.style.display = 'none';
-  }
+var closingIcon = document.getElementById('closingIcon');
+
+productButton.addEventListener('click', function () {
+  aside.style.display = 'block';
+});
+
+closingIcon.addEventListener('click', function () {
+  aside.style.display = 'none';
 });
