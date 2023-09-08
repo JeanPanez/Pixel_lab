@@ -89,10 +89,6 @@ main h1 {
   justify-content: space-between;
 }
 
-.product-data div {
-  /* width: 50%; */
-}
-
 .product-data div h3 {
   color: #707070;
   font-weight: 400;
@@ -117,6 +113,28 @@ main h1 {
   border: none;
   margin: 20px 0;
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* form button {
+  color: #e9e9e9;
+  background-color: #1e2859;
+  font-weight: 500;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.product-button-container img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
 }
 
 .form-container {
@@ -150,6 +168,14 @@ form h2 {
   top: 12px;
 }
 
+form p {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 8px 20px;
+  color: #b48b3f;
+  text-align: center;
+}
+
 form label {
   color: #707070;
   font-size: 16px;
@@ -180,13 +206,23 @@ form textarea {
 form button {
   color: #e9e9e9;
   background-color: #1e2859;
+  font-weight: 500;
   padding: 8px;
   font-size: 16px;
   border: none;
   width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.form-container img {
+form button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.form-container .closing-icon {
   width: 36px;
   position: absolute;
   top: 12px;
