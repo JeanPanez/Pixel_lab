@@ -1,10 +1,11 @@
-var productButton = document.getElementById('productButton');
+var productButtons = document.querySelectorAll('.productButton');
 var aside = document.getElementById('aside');
-
 var closingIcon = document.getElementById('closingIcon');
 
-productButton.addEventListener('click', function () {
-  aside.style.display = 'block';
+productButtons.forEach(function (button) {
+  button.addEventListener('click', function () {
+    aside.style.display = 'block';
+  });
 });
 
 closingIcon.addEventListener('click', function () {
