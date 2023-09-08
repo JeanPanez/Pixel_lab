@@ -16,6 +16,8 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 0 18px 10px #aaaaaa;
+  position: fixed;
+  width: 100%;
 }
 
 .header-content .navigation-list {
@@ -33,7 +35,7 @@ header {
 }
 
 .business-description {
-  padding: 40px 0;
+  padding: 120px 0 40px;
   display: flex;
   align-items: center;
 }
@@ -54,20 +56,44 @@ header {
   font-weight: 400;
 }
 
+.mobile-icon {
+  width: 50px;
+  height: 50px;
+  display: none;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+#check {
+  display: none;
+}
+
+.chekbtn {
+  cursor: pointer;
+}
+
+.mobile-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 .business-information {
   background-color: #1e2859;
   display: flex;
   justify-content: space-around;
   padding: 60px 0;
-  position: relative;
 }
 
 .business-information .information-content {
-  width: 30%;
+  width: 40%;
   background-color: #ffffff;
   padding: 20px;
   border: 8px solid #b48b3f;
-  position: relative;
 }
 
 .business-information .information-content h2 {
@@ -172,4 +198,177 @@ footer {
 .links-list li img {
   width: 30px;
   margin-right: 10px;
+}
+
+@media (max-width: 1054px) {
+  .business-description h1 {
+    font-size: 70px;
+  }
+
+  .business-description p {
+    font-size: 26px;
+  }
+
+  .business-information .information-content h2 {
+    font-size: 48px;
+  }
+
+  .business-information .information-content p {
+    font-size: 14px;
+  }
+
+  .members-container h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 950px) {
+  .business-description p {
+    padding: 20px 20px 0 0;
+  }
+}
+
+@media (max-width: 884px) {
+  .business-description {
+    flex-direction: column;
+  }
+
+  .business-description h1 {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .business-description p {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .business-information .information-content {
+    width: 44%;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-galery .gallery-item {
+    width: 440px;
+    height: 242px;
+  }
+
+  .introduction .introduction-image {
+    width: 80%;
+  }
+
+  .work-statistics .statistics-information {
+    width: 260px;
+  }
+
+  .mobile-icon {
+    display: flex;
+  }
+
+  .chekbtn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-menu ul{
+    position: fixed;
+    width: 200px;
+    height: 380px;
+    background-color: #1e2859;
+    top: 80px;
+    right: -100%;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .mobile-menu ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 32px;
+  }
+
+  #check:checked ~ nav>ul {
+    right: 0;
+  }
+
+  .header-content nav {
+    display: none;
+  }
+
+  .business-information {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .business-information .information-content {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .members-container .company-members {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-information .information-content {
+    width: 90%;
+  }
+
+  .members-container {
+    padding: 40px 0;
+  }
+
+  .members-container .company-members {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .business-description h1 {
+    font-size: 61px;
+  }
+
+  .business-description p {
+    font-size: 22px;
+  }
+
+  .business-information .information-content h2 {
+    font-size: 42px;
+  }
+
+  .business-information .information-content {
+    padding: 16px 10px;
+  }
+
+  .members-container h2 {
+    font-size: 42px;
+    padding: 10px;
+  }
+
+  .member h3 {
+    font-size: 16px;
+  }
+
+  .member p {
+    font-size: 14px;
+  }
+
+  .member .image-container {
+    width: 180px;
+    height: 180px;
+  }
 }
