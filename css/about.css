@@ -249,19 +249,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .work-galery .gallery-item {
-    width: 440px;
-    height: 242px;
-  }
-
-  .introduction .introduction-image {
-    width: 80%;
-  }
-
-  .work-statistics .statistics-information {
-    width: 260px;
-  }
-
   .mobile-icon {
     display: flex;
   }
@@ -319,7 +306,10 @@ footer {
 
   .members-container .company-members {
     flex-wrap: wrap;
-    justify-content: center;
+  }
+
+  .company-members .member {
+    margin: 60px 8px 0;
   }
 }
 
