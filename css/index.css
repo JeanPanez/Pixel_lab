@@ -20,6 +20,19 @@ header {
   width: 100%;
 }
 
+.header-content .logo-container {
+  height: 100%;
+  width: 180px;
+  background-color: #ffffff;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container img {
+  height: 100%;
+}
+
 .header-content .navigation-list {
   display: flex;
 }
