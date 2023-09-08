@@ -16,6 +16,8 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 0 18px 10px #aaaaaa;
+  position: fixed;
+  width: 100%;
 }
 
 .header-content .navigation-list {
@@ -35,6 +37,7 @@ header {
 
 .introduction {
   display: flex;
+  padding-top: 80px;
 }
 
 .introduction .introduction-content {
@@ -72,10 +75,38 @@ header {
 
 .introduction .introduction-image {
   width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .introduction-image img {
   width: 100%;
+}
+
+.mobile-icon {
+  width: 50px;
+  height: 50px;
+  display: none;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+#check {
+  display: none;
+}
+
+.chekbtn {
+  cursor: pointer;
+}
+
+.mobile-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 main {
@@ -244,4 +275,200 @@ footer {
 .links-list li img {
   width: 30px;
   margin-right: 10px;
+}
+
+@media (max-width: 1054px) {
+  .introduction-content h1 {
+    font-size: 70px;
+  }
+
+  .introduction-content p {
+    font-size: 26px;
+  }
+
+  .introduction-content button {
+    font-size: 19px;
+  }
+
+  .categories-container h2 {
+    font-size: 48px;
+  }
+
+  .category h3 {
+    font-size: 26px;
+  }
+
+  .category p {
+    font-size: 14px;
+  }
+
+  .category span {
+    font-size: 16px;
+  }
+
+  .category a button {
+    font-size: 16px;
+  }
+
+  .work-container h2 {
+    font-size: 48px;
+  }
+
+  .statistics-information span {
+    font-size: 32px;
+  }
+
+  .statistics-information p {
+    font-size: 26px;
+  }
+
+  .work-statistics {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .categories-content {
+    flex-wrap: wrap;
+    padding: 40px 0 0 0;
+  }
+
+  .categories-content .category {
+    width: 360px;
+    margin-bottom: 30px;
+  }
+
+  .work-galery .gallery-item {
+    width: 356px;
+    height: 196px;
+  }
+}
+
+@media (max-width: 884px) {
+  .introduction {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introduction .introduction-content {
+    width: 100%;
+  }
+
+  .introduction .introduction-image {
+    width: 60%;
+  }
+
+  .work-container .work-statistics {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .work-statistics .statistics-information {
+    width: 280px;
+    padding: 14px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-galery .gallery-item {
+    width: 440px;
+    height: 242px;
+  }
+
+  .introduction .introduction-image {
+    width: 80%;
+  }
+
+  .work-statistics .statistics-information {
+    width: 260px;
+  }
+
+  .mobile-icon {
+    display: flex;
+  }
+
+  .chekbtn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-menu ul{
+    position: fixed;
+    width: 200px;
+    height: 380px;
+    background-color: #1e2859;
+    top: 80px;
+    right: -100%;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .mobile-menu ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 32px;
+  }
+
+  #check:checked ~ nav>ul {
+    right: 0;
+  }
+
+  .header-content nav {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-galery .gallery-item {
+    width: 380px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 380px) {
+  .introduction .introduction-content {
+    padding: 40px 0;
+  }
+
+  .introduction-content p {
+    padding: 20px 10px;
+  }
+
+  .introduction-content h1 {
+    font-size: 61px;
+  }
+
+  .introduction-content p {
+    font-size: 22px;
+  }
+
+  .categories-container h2 {
+    font-size: 42px;
+  }
+
+  .categories-content .category {
+    width: 310px;
+  }
+
+  .work-container h2 {
+    font-size: 42px;
+  }
+
+  .statistics-information span {
+    font-size: 28px;
+  }
+
+  .statistics-information p {
+    font-size: 22px;
+  }
 }
