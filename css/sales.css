@@ -16,6 +16,8 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 0 18px 10px #aaaaaa;
+  position: fixed;
+  width: 100%;
 }
 
 .header-content .logo-container {
@@ -45,25 +47,54 @@ header {
   color: #e9e9e9;
 }
 
+.mobile-icon {
+  width: 50px;
+  height: 50px;
+  display: none;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+#check {
+  display: none;
+}
+
+.chekbtn {
+  cursor: pointer;
+}
+
+.mobile-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+main {
+  padding-top: 80px;
+}
+
 main h1 {
   color: #1e2859;
   font-size: 88px;
   font-weight: 900;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 8px;
 }
 
 .products-container {
-  padding: 40px;
+  padding: 40px 10px;
   display: flex;
-  gap: 80px;
+  gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .product {
-  width: 380px;
-  /* height: 654px; */
+  width: 320px;
   box-shadow: 0 0 10px 4px #aaaaaa;
 }
 
@@ -171,7 +202,7 @@ form h2 {
 form p {
   font-size: 16px;
   font-weight: 300;
-  padding: 8px 20px;
+  padding: 8px 20px 8px 0;
   color: #b48b3f;
   text-align: center;
 }
@@ -225,7 +256,7 @@ form button img {
 .form-container .closing-icon {
   width: 36px;
   position: absolute;
-  top: 12px;
+  top: 14px;
   right: 32px;
 }
 
@@ -311,3 +342,160 @@ footer {
   font-weight: 500;
 }
 
+@media (max-width: 1054px) {
+  main h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-icon {
+    display: flex;
+  }
+
+  .chekbtn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-menu ul{
+    position: fixed;
+    width: 200px;
+    height: 380px;
+    background-color: #1e2859;
+    top: 80px;
+    right: -100%;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .mobile-menu ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 32px;
+  }
+
+  #check:checked ~ nav>ul {
+    right: 0;
+  }
+
+  .header-content nav {
+    display: none;
+  }
+
+  .form-container {
+    width: 340px;
+  }
+  
+  .form-container .closing-icon {
+    top: 14px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    width: 300px;
+  }
+  
+  form {
+    padding: 60px 0 20px 20px;
+  }
+  
+  form h2 {
+    font-size: 16px;
+  }
+  
+  form p {
+    font-size: 14px;
+  }
+  
+  form label {
+    font-size: 14px;
+  }
+  
+  form textarea {
+    font-size: 12px;
+  }
+  
+  form button {
+    font-size: 14px;
+  }
+  
+  .form-container .closing-icon {
+    width: 28px;
+    top: 16px;
+    right: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  main h1 {
+    font-size: 61px;
+  }
+
+  .products-container {
+    padding: 0 10px 40px;
+  }
+  
+  .product {
+    width: 290px;
+  }
+  
+  .product h2 {
+    font-size: 19px;
+  }
+  
+  .product .product-description {
+    padding: 20px 14px 8px 20px;
+    height: 110px;
+    font-size: 14px;
+  }
+  
+  .product-data div h3 {
+    font-size: 16px;
+  }
+  
+  .product-data div p {
+    font-size: 14px;
+  }
+  
+  .product-button-container button {
+    font-size: 16px;
+  }
+
+  form {
+    padding: 40px 0 10px 20px;
+  }
+  
+  form h2 {
+    font-size: 16px;
+    padding: 6px 20px;
+    top: 8px;
+  }
+  
+  form input {
+    padding: 6px;
+    font-size: 12px;
+  }
+  
+  form textarea {
+    padding: 6px;
+    height: 90px;
+  }
+  
+  .form-container .closing-icon {
+    top: 10px;
+    right: 18px;
+  }
+}
