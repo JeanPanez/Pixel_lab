@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixel Labs Innovation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
   <link rel="stylesheet" href="./css/sales.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -179,27 +180,40 @@
     </section>
     <section class="form-container" id="aside">
       <aside>
-        <form action="">
+        <form action="" id="htmlcapture">
           <h2>Solicite su Producto</h2>
           <p>Si desea algo similar u otro producto personalizado solicite su producto en este formulario</p>
-          <label for="name">Nombres y Apellidos</label><br>
-          <input type="text" id="name"><br>
+          <label for="nombres">Nombres y Apellidos</label><br>
+          <input type="text" id="nombres"><br>
 
-          <label for="dimension ">Dimensiones</label><br>
-          <input type="text" id="dimension "><br>
+          <label for="dimension">Dimensiones</label><br>
+          <input type="text" id="dimension" placeholder="Alto x largo"><br>
 
-          <label for="character-design">Personaje o Diseño</label><br>
-          <input type="text" id="character-design"><br>
+          <label for="personaje">Personaje o Diseño</label><br>
+          <input type="text" id="personaje"><br>
 
-          <label for="message">Mensaje</label><br>
-          <textarea name="" id="message" cols="30" rows="10"></textarea><br>
-          <button>
-            <img src="./assets/icons/whastapp.png" alt="Ícono de Whastapp">
-            Enviar a Whastapp
-          </button>
+          <label for="mensaje">Mensaje</label><br>
+          <textarea name="" id="mensaje" cols="30" rows="10"></textarea><br>
+            
         </form>
         <img src="./assets/icons/icono-cierre.png" id="closingIcon" class="closing-icon" alt="ïcono para cerrar el formulario">
       </aside>
+        <div class="buy-button">
+            
+            <button id="captureButton">Capturar comprobante</button>
+	          <button id="downloadButton" disabled>Descargar comprobante</button>
+            <button id="sendButton" disabled>
+              <!-- <img src="./assets/icons/whastapp.png" alt="Ícono de Whastapp"> -->
+              Enviar a Whastapp
+            </button>
+            <img src="" id="showImg" style="display: inline-block;">
+            
+            
+          
+        <script type="text/javascript" src="js/captura.js"></script>
+        
+      </div>
+      <script src="js/envio.js"></script>
     </section>
   </main>
   <footer>
