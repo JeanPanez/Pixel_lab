@@ -61,8 +61,8 @@
 }
 
 .mobile-icon img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 
 .mobile-menu {
@@ -144,7 +144,7 @@ footer {
 }
 
 .footer-links .links-list {
-  margin: 20px 0;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -153,7 +153,6 @@ footer {
 .links-list li{
   list-style: none;
   width: 180px;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +161,7 @@ footer {
 .links-list li a {
   text-decoration: none;
   color: #CCCCCC;
-  padding: 0 10px;
+  padding: 6px;
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -186,7 +185,7 @@ footer {
 }
 
 .footer-solutions .solutions-list {
-  margin: 20px 0;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -195,7 +194,6 @@ footer {
 .solutions-list li{
   list-style: none;
   width: 180px;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,7 +202,7 @@ footer {
 .solutions-list li a {
   text-decoration: none;
   color: #CCCCCC;
-  padding: 0 10px;
+  padding: 10px;
   font-weight: 500;
 }
 
@@ -227,6 +225,7 @@ footer {
 @media (max-width: 768px) {
   .mobile-icon {
     display: flex;
+    align-items: center;
   }
 
   .chekbtn {
@@ -239,7 +238,7 @@ footer {
 
   .mobile-menu ul{
     position: fixed;
-    width: 200px;
+    width: 160px;
     height: 380px;
     background-color: #1e2859;
     top: 80px;
@@ -258,7 +257,7 @@ footer {
   nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 24px;
   }
 
   #check:checked ~ nav>ul {
@@ -281,6 +280,36 @@ footer {
 
   main h1 {
     padding: 50px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links h2 {
+    font-size: 19px;
+  }
+
+  .links-list li a {
+    font-size: 14px;
+  }
+
+  .footer-solutions h2 {
+    font-size: 19px;
+  }
+
+  .solutions-list li a {
+    font-size: 14px;
+  }
+
+  .mobile-menu ul {
+    width: 140px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  .header-content .logo-container {
+    width: 50%;
   }
 }
 
