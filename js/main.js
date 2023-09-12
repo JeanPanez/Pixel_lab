@@ -1,13 +1,13 @@
 var productButtons = document.querySelectorAll('.productButton');
-var aside = document.getElementById('aside');
+var asideContainer = document.getElementById('asideContainer');
 var closingIcon = document.getElementById('closingIcon');
 
 productButtons.forEach(function (button) {
   button.addEventListener('click', function () {
-    aside.style.display = 'block';
+    asideContainer.style.display = 'block';
   });
 });
 
 closingIcon.addEventListener('click', function () {
-  aside.style.display = 'none';
+  asideContainer.style.display = 'none';
 });
