@@ -131,6 +131,7 @@ main {
   font-size: 60px;
   font-weight: 700;
   text-align: center;
+  padding: 0 8px;
 }
 
 .services-content {
@@ -347,23 +348,23 @@ footer {
     font-size: 19px;
   }
 
-  .categories-container h2 {
+  .services-container h2 {
     font-size: 48px;
   }
 
-  .category h3 {
+  .service h3 {
     font-size: 26px;
   }
 
-  .category p {
+  .service p {
     font-size: 14px;
   }
 
-  .category span {
+  .service span {
     font-size: 16px;
   }
 
-  .category a button {
+  .service a button {
     font-size: 16px;
   }
 
@@ -385,12 +386,11 @@ footer {
 }
 
 @media (max-width: 950px) {
-  .categories-content {
-    flex-wrap: wrap;
+  .services-content {
     padding: 40px 0 0 0;
   }
 
-  .categories-content .category {
+  .services-content .service {
     width: 360px;
     margin-bottom: 30px;
   }
@@ -484,6 +484,11 @@ footer {
   .header-content nav {
     display: none;
   }
+
+  .services-content .service {
+    width: 360px;
+    margin: 0 8px 30px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -538,11 +543,11 @@ footer {
     font-size: 22px;
   }
 
-  .categories-container h2 {
+  .services-container h2 {
     font-size: 42px;
   }
 
-  .categories-content .category {
+  .services-content .service {
     width: 310px;
   }
 
