@@ -126,20 +126,21 @@ main {
   padding: 40px 0 0 0;
 }
 
-.categories-container h2 {
+.services-container h2 {
   color: #1e2859;
   font-size: 60px;
   font-weight: 700;
   text-align: center;
 }
 
-.categories-content {
+.services-content {
   display: flex;
-  justify-content: space-around;
-  padding: 40px 0;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  flex-wrap: wrap;
 }
 
-.categories-content .category {
+.services-content .service {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -147,25 +148,26 @@ main {
   justify-content: space-between;
   border: 8px solid #1e2859;
   padding: 20px;
+  margin-bottom: 40px;
 }
 
-.category img {
+.service img {
   height: 120px;
   margin: 20px 0;
 }
 
-.category h3 {
+.service h3 {
   color: #1e2859;
   font-size: 32px;
   padding: 20px 0;
   font-weight: 700;
 }
 
-.category p {
+.service p {
   padding: 20px;
 }
 
-.category span {
+.service span {
   color: #b48b3f;
   border: 4px solid #b48b3f;
   padding: 6px 16px;
@@ -177,15 +179,15 @@ main {
   font-weight: 500;
 }
 
-.category a button {
+.service a button {
   background-color: #b48b3f;
   color: #ffffff;
   padding: 20px;
   border: none;
   width: 256px;
   min-width: 100px;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 700;
   cursor: pointer;
 }
 
