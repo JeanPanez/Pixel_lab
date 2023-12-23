@@ -11,7 +11,7 @@ header {
 
 .header-content {
   height: 80px;
-  background: #1e2859;
+  background: #ffffff; /* Puedes eliminar esta línea o dejarla como está */
   display: flex;
   align-items: center;
   justify-content: space-between;

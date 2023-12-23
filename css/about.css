@@ -11,7 +11,7 @@ header {
 
 .header-content {
   height: 80px;
-  background: #1e2859;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,7 +44,7 @@ header {
 
 .navigation-list li a {
   text-decoration: none;
-  color: #e9e9e9;
+  color: #8e44ad;
 }
 
 .business-description {
@@ -53,13 +53,13 @@ header {
   align-items: center;
 }
 
-.business-description h1 {
+.business-description img {
   width: 50%;
-  color: #1e2859;
-  font-size: 88px;
-  font-weight: 900;
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .business-description p {
   width: 50%;
@@ -96,7 +96,7 @@ header {
 }
 
 .business-information {
-  background-color: #1e2859;
+  background: linear-gradient(to right, #8e44ad, #69ded8);;
   display: flex;
   justify-content: space-around;
   padding: 60px 0;
@@ -106,18 +106,12 @@ header {
   width: 40%;
   background-color: #ffffff;
   padding: 20px;
-  border: 8px solid #b48b3f;
-}
-
-.business-information .information-content h2 {
-  color: #1e2859;
-  font-size: 60px;
-  font-weight: 700;
-  padding: 0 20px;
+  border: 8px solid #8108b1;
 }
 
 .business-information .information-content p {
   padding: 20px;
+  text-align: justify;
 }
 
 .members-container {
@@ -125,13 +119,11 @@ header {
   background-color: #e9e9e9;
 }
 
-.members-container h2 {
-  text-align: center;
-  color: #1e2859;
-  font-size: 60px;
-  font-weight: 700;
-  padding: 0 20px;
+.members-container img {
+  display: block;
+  margin: 0 auto;
 }
+
 
 .members-container .company-members {
   display: flex;
@@ -149,13 +141,13 @@ header {
   border-radius: 20px;
   border: 4px solid #1e2859;
 }
-
+/* Circulo */
 .member .image-container {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 5px 2px #b48b3f;
+  box-shadow: 0 0 5px 2px #66057e;
 }
 
 .image-container img {
@@ -163,6 +155,7 @@ header {
 }
 
 .member h3 {
+  color: #69ded8;
   padding: 20px 0;
   font-weight: 700;
   text-align: center;
@@ -170,13 +163,13 @@ header {
 }
 
 .member p {
-  color: #b48b3f;
+  color: #8e44ad;
   font-weight: 900;
   font-size: 18px;
 }
 
 footer {
-  background-color: #101630;
+  background: linear-gradient(to right, #8e44ad, #69ded8);;
   display: flex;
 }
 
@@ -184,9 +177,9 @@ footer {
   padding: 20px 0;
   width: 50%;
 }
-
+/* footer celeste */
 .footer-links h2 {
-  color: #ffffff;
+  color: #69ded8;
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -206,10 +199,10 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
+/* footer celeste */
 .links-list li a {
   text-decoration: none;
-  color: #CCCCCC;
+  color: #69ded8;
   padding: 6px;
   display: flex;
   align-items: center;
@@ -225,9 +218,9 @@ footer {
   padding: 20px 0;
   width: 50%;
 }
-
+/* Footer purpura */
 .footer-solutions h2 {
-  color: #ffffff;
+  color: #8e44ad;
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -247,10 +240,10 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
+/* Footer purpura */
 .solutions-list li a {
   text-decoration: none;
-  color: #CCCCCC;
+  color: #8e44ad;
   padding: 10px;
   font-weight: 500;
 }
